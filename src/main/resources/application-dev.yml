@@ -1,0 +1,4 @@
+app.datasource.url=jdbc:mysql://localhost/first
+app.datasource.username=dbuser
+app.datasource.password=dbpass
+app.datasource.configuration.maximum-pool-size=30

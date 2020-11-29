@@ -1,7 +1,7 @@
 package com.harunugur.security.service;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.harunugur.entity.User;
+import com.harunugur.entity.auth.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

@@ -1,6 +1,6 @@
-package com.harunugur.repository;
+package com.harunugur.repository.auth;
 
-import com.harunugur.entity.Role;
+import com.harunugur.entity.auth.Role;
 import com.harunugur.entity.enums.RoleType;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

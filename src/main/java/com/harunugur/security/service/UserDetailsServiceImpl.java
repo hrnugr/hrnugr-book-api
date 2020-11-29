@@ -1,7 +1,7 @@
 package com.harunugur.security.service;
 
-import com.harunugur.entity.User;
-import com.harunugur.repository.UserRepository;
+import com.harunugur.entity.auth.User;
+import com.harunugur.repository.auth.UserRepository;
 import com.harunugur.security.util.Messages;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;

@@ -1,4 +1,4 @@
-package com.harunugur.entity;
+package com.harunugur.entity.auth;
 
 import com.harunugur.entity.enums.RoleType;
 import lombok.AllArgsConstructor;

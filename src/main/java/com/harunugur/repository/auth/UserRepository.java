@@ -1,6 +1,6 @@
-package com.harunugur.repository;
+package com.harunugur.repository.auth;
 
-import com.harunugur.entity.User;
+import com.harunugur.entity.auth.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,4 +1,4 @@
-package com.harunugur.entity;
+package com.harunugur.entity.auth;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

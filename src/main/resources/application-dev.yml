@@ -1,4 +1,29 @@
-app.datasource.url=jdbc:mysql://localhost/first
-app.datasource.username=dbuser
-app.datasource.password=dbpass
-app.datasource.configuration.maximum-pool-size=30
+spring:
+   datasource:
+      url: jdbc:postgresql://localhost:5432/bookstore
+      username: postgres
+      password: admin
+      configuration:
+         maximum-pool : 30
+   jpa:
+      hibernate:
+         default_schema: idefix
+         ddl-auto: update
+      generate-ddl : true
+      properties:
+         hibernate:
+            dialect: org.hibernate.dialect.PostgreSQLDialect
+            jdbc:
+               lob:
+                  non_contextual_creation: true
+
+app:
+   bookstore:
+      jwtSecret: T8$aK/D*qp0@69!OmB5k8L[[E#%uBYJiU=}59u&uMCx?8xB
+      jwtExpirationMs : 86400000
+
+server :
+   error :
+      whitelabel :
+         enabled: false
+   port : 8084

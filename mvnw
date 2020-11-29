@@ -263,25 +263,25 @@ else
     if [ "$MVNW_VERBOSE" = true ]; then
       echo "Falling back to using Java to download"
     fi
-    javaClass="$BASE_DIR/.mvn/wrapper/MavenWrapperDownloader.java"
+    javaClass="$BASE_DIR/.mvn/wrapper/.java"
     # For Cygwin, switch paths to Windows format before running javac
     if $cygwin; then
       javaClass=$(cygpath --path --windows "$javaClass")
     fi
     if [ -e "$javaClass" ]; then
-      if [ ! -e "$BASE_DIR/.mvn/wrapper/MavenWrapperDownloader.class" ]; then
+      if [ ! -e "$BASE_DIR/.mvn/wrapper/.class" ]; then
         if [ "$MVNW_VERBOSE" = true ]; then
-          echo " - Compiling MavenWrapperDownloader.java ..."
+          echo " - Compiling .java ..."
         fi
         # Compiling the Java class
         ("$JAVA_HOME/bin/javac" "$javaClass")
       fi
-      if [ -e "$BASE_DIR/.mvn/wrapper/MavenWrapperDownloader.class" ]; then
+      if [ -e "$BASE_DIR/.mvn/wrapper/.class" ]; then
         # Running the downloader
         if [ "$MVNW_VERBOSE" = true ]; then
-          echo " - Running MavenWrapperDownloader.java ..."
+          echo " - Running .java ..."
         fi
-        ("$JAVA_HOME/bin/java" -cp .mvn/wrapper MavenWrapperDownloader "$MAVEN_PROJECTBASEDIR")
+        ("$JAVA_HOME/bin/java" -cp .mvn/wrapper  "$MAVEN_PROJECTBASEDIR")
       fi
     fi
   fi

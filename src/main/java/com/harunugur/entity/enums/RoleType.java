@@ -1,11 +1,7 @@
 package com.harunugur.entity.enums;
 
 public enum RoleType {
-
-    ADMIN,
-    EDITOR,
-    USER;
-
-    RoleType() {
-    }
+    ROLE_ADMIN,
+    ROLE_USER,
+    ROLE_EDITOR;
 }

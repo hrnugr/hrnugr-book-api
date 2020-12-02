@@ -1,7 +1,6 @@
 package com.harunugur.controller;
 
-import com.harunugur.dto.response.PageDto;
-import com.harunugur.entity.book.Book;
+import com.harunugur.entity.Book;
 import com.harunugur.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;

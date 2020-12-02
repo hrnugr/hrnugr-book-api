@@ -1,7 +1,6 @@
 package com.harunugur.service;
 
-import com.harunugur.dto.response.PageDto;
-import com.harunugur.entity.book.Book;
+import com.harunugur.entity.Book;
 import com.harunugur.repository.book.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -35,13 +34,7 @@ public class BookService {
 
         Pageable pagingSort = PageRequest.of(page, size, Sort.by(orders));
         Page<Book> books = repository.findAll(pagingSort);
-        /*
-        return PageDto.builder()
-                .currentPage(books.getNumber())
-                .totalPages(books.getTotalPages())
-                .data(books.getContent());
 
-        */
         return books;
      }
 

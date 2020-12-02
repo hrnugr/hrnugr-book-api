@@ -1,18 +1,10 @@
 package com.harunugur.repository.book;
 
-import com.harunugur.entity.book.Book;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
+import com.harunugur.entity.Book;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.List;
-
+@Repository
 public interface BookRepository extends JpaRepository<Book, Long> {
-
-    Page<Book> findByPublished(boolean published, Pageable pageable);
-    Page<Book> findByName(String name, Pageable pageable);
-    List<Book> findByName(String name, Sort sort);
-    Page<Book> findAll(Pageable pageable);
 
 }

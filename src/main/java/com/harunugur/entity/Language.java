@@ -1,6 +1,5 @@
-package com.harunugur.entity.auth;
+package com.harunugur.entity;
 
-import com.harunugur.entity.enums.RoleType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -8,19 +7,17 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
-@Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Table(name = "ROLES")
-public class Role {
+@Entity
+@Table(name = "LANGUAGES")
+public class Language {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
-
-    @Enumerated(EnumType.STRING)
-    @Column(length = 20)
-    private RoleType name;
+    private Long id;
+    private String name;
+    private String code;
 
 }
